@@ -1,0 +1,15 @@
+{
+  "name": "sbom-vuln-fixture",
+  "version": "0.0.0",
+  "private": true,
+  "description": "STATIC test fixture of known-compromised package versions for SBOM/scanner testing. DO NOT INSTALL.",
+  "scripts": {
+    "preinstall": "echo 'BLOCKED: this repo is a static SBOM fixture and must never be installed.' && exit 1"
+  },
+  "dependencies": {
+    "@immobiliarelabs/backstage-plugin-gitlab": "7.0.2",
+    "@immobiliarelabs/backstage-plugin-gitlab-backend": "7.0.2",
+    "@immobiliarelabs/backstage-plugin-ldap-auth": "5.2.1",
+    "@immobiliarelabs/backstage-plugin-ldap-auth-backend": "5.2.1"
+  }
+}
